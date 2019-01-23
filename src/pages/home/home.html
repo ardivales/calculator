@@ -1,17 +1,78 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Home</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+    <form id="calculator-form1">
+        <ion-item id="calculator-input1">
+            <ion-label></ion-label>
+            <ion-input type="text" placeholder="0" name="display" [(ngModel)]="result"></ion-input>
+        </ion-item>
+    </form>
+    <div id="calculator-container1">
+        <button id="calculator-button3" ion-button color="calm" (click)="btnClicked('C')">
+    C
+  </button>
+        <button id="calculator-button1" ion-button color="calm" (click)="btnClicked('%')">
+    %
+  </button>
+        <button id="calculator-button2" ion-button color="calm" (click)="btnClicked('/')">
+    /
+  </button>
+    </div>
+    <div id="calculator-container2">
+        <button id="calculator-button5" ion-button color="stable" (click)="btnClicked('7')">
+    7
+  </button>
+        <button id="calculator-button6" ion-button color="stable" (click)="btnClicked('8')">
+    8
+  </button>
+        <button id="calculator-button7" ion-button color="stable" (click)="btnClicked('9')">
+    9
+  </button>
+        <button id="calculator-button8" ion-button color="calm" (click)="btnClicked('*')">
+    x
+  </button>
+    </div>
+    <div id="calculator-container3">
+        <button id="calculator-button9" ion-button color="stable" (click)="btnClicked('4')">
+    4
+  </button>
+        <button id="calculator-button10" ion-button color="stable" (click)="btnClicked('5')">
+    5
+  </button>
+        <button id="calculator-button11" ion-button color="stable" (click)="btnClicked('6')">
+    6
+  </button>
+        <button id="calculator-button12" ion-button color="calm" (click)="btnClicked('-')">
+    -
+  </button>
+    </div>
+    <div id="calculator-container4">
+        <button id="calculator-button13" ion-button color="stable" (click)="btnClicked('1')">
+    1
+  </button>
+        <button id="calculator-button14" ion-button color="stable" (click)="btnClicked('2')">
+    2
+  </button>
+        <button id="calculator-button15" ion-button color="stable" (click)="btnClicked('3')">
+    3
+  </button>
+        <button id="calculator-button16" ion-button color="calm" (click)="btnClicked('+')">
+    +
+  </button>
+    </div>
+    <div id="calculator-container5">
+        <button id="calculator-button17" ion-button color="stable" (click)="btnClicked('0')">
+    0
+  </button>
+        <button id="calculator-button18" ion-button color="stable" (click)="btnClicked('.')">
+    .
+  </button>
+        <button id="calculator-button19" ion-button color="calm" (click)="btnClicked('=')">
+    =
+  </button>
+    </div>
 </ion-content>
